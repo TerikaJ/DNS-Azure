@@ -65,11 +65,21 @@ In the project, we focus on the practical application of DNS, a fundamental conc
 
 ① On the domain controller, change mainframe's record address to 8.8.8.8 (Google) and refresh the DNS server.
 
+<img width="481" alt="9  mainframe IP 8 8 8" src="https://github.com/TerikaJ/DNS-Azure/assets/136477450/59234128-bbf6-4e10-a708-809a1168c58d">
+
+<img width="550" alt="7a  Refresh" src="https://github.com/TerikaJ/DNS-Azure/assets/136477450/0360b4ea-c67d-41f1-aa25-90594ef8fa1d">
+
 ② On the client, ping "mainframe"; it will still ping the old IP address.
+
+<img width="525" alt="10  ping mainframe 8 8 8" src="https://github.com/TerikaJ/DNS-Azure/assets/136477450/9c7e4e59-a9de-4fab-9b77-7823db6c04bd">
 
 ③ Run ipconfig /displaydns to reveal that the DNS cache still has the old IP.
 
-④ Run ipconfig /flushdns to empty the cache.
+
+
+④ Run ipconfig /flushdns to empty the cache. 
+
+***IMPORTANT: Ensure that you are running the Command Prompt as an Administrator*** or this will not work.
 
 ⑤ Ping "mainframe" again; the IP address will be updated to the new one on the client side.
 
@@ -91,20 +101,13 @@ In the project, we focus on the practical application of DNS, a fundamental conc
 <img src="https://i.imgur.com/ds0SCKW.png" height="80%" width="80%" alt="DNS Steps"/>
 <img src="https://i.imgur.com/d4cXTCS.png" height="80%" width="80%" alt="DNS Steps"/>
 </p>
-<p>
-This next exercise will showcase the DNS cache. On the domain controller, I changed mainframe's record address to 8.8.8.8 (Google) and refreshed the DNS server. When pinging mainframe on the client, it will still ping the old IP address. When the command ipconfig /displaydns is run, it will reveal that the DNS cache still has the old IP. In order to update the cache, we need to clear it. The command ipconfig /flushdns will empty the cache so that when we ping mainframe again, the IP address will be updated to the new one on the client side. When pinging mainframe, the new IP address of the record will show.
-</p>
-<br />
+
 
 <p>
 <img src="https://i.imgur.com/rI2NYU7.png" height="80%" width="80%" alt="DNS Steps"/>
 <img src="https://i.imgur.com/FmVM0IU.png" height="80%" width="80%" alt="DNS Steps"/>
 <img src="https://i.imgur.com/dyWduSW.png" height="80%" width="80%" alt="DNS Steps"/>
 </p>
-<p>
-A CNAME record will now be made on the DNS server that will point "search" to Google. On the Forward Lookup Zones tab in the DNS Manager, open the tab that has the domain. Create a new CNAME record called search and point it to Google. Refresh the server to save the changes. On the client, pinging search and using nslookup will return the results of the CNAME record.
-</p>
-<br />
 
 <h2>Conclusion </h2>
 
