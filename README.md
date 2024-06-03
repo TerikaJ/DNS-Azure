@@ -37,16 +37,29 @@ In the project, we focus on the practical application of DNS, a fundamental conc
 
 ④ On the ***DC-01**, open the DNS Manager.
 
+<img width="550" alt="4  DNS on DC" src="https://github.com/TerikaJ/DNS-Azure/assets/136477450/83830dbc-f0a8-4fdd-b57e-56f4604e4bd6">
 
 ⑤ Navigate to your domain within the Forward Lookup Zones tab (e.g., mydomain.com).
 
+<img width="550" alt="5  Forward Lookup Zones" src="https://github.com/TerikaJ/DNS-Azure/assets/136477450/3f043778-c076-4010-9f81-bbf62ab7833e">
+
 ⑥ Right-click on the page and select "New Host".
+
+<img width="550" alt="6  New Host" src="https://github.com/TerikaJ/DNS-Azure/assets/136477450/a9b56cda-3887-4e82-9eb3-20979b93d68e">
 
 ⑦ For the name, input "mainframe" and set the IP address to match the domain controller's IP.
 
+<img width="550" alt="7  Mainframe host added" src="https://github.com/TerikaJ/DNS-Azure/assets/136477450/4a46859e-b757-4d29-ba71-0ce2477ef0de">
+
 ⑧ Refresh the DNS server to update the new record.
 
+<img width="550" alt="7a  Refresh" src="https://github.com/TerikaJ/DNS-Azure/assets/136477450/0360b4ea-c67d-41f1-aa25-90594ef8fa1d">
+
 ⑨ Return to the client and ping "mainframe" again; it should now resolve.
+
+<img width="550" alt="8  Ping mainframe DNS resolves" src="https://github.com/TerikaJ/DNS-Azure/assets/136477450/a3cfea40-2319-48ca-9101-7876767cd7fc">
+
+
 
 <h2>Management Steps</h2>
 
