@@ -5,7 +5,7 @@
 
 <h2>Introduction</h2>
 
-In the project, we focus on the practical application of DNS, a fundamental concept in IT. Building on a previous lab where a client VM was joined to the domain VM **'mydomain.com'**, we will configure DNS records and explore their functionality. Logged in as the administrator account **mydomain\jane_doe** on both the **Client-01** and **DC-01** VMs, we will demonstrate how DNS operates in a real-world scenario. This hands-on approach emphasizes the importance of administrative access for effective DNS management. 
+In the project, we focus on the practical application of DNS, a fundamental concept in IT. Building on a previous lab where a client VM was joined to the domain VM **'mydomain.com'**, we will configure DNS records and explore their functionality. Logged in as the administrator account **mydomain.com\jane_admin** on both the **Client-01** and **DC-01** VMs, we will demonstrate how DNS operates in a real-world scenario. This hands-on approach emphasizes the importance of administrative access for effective DNS management. 
 
 <h2>Environments and Technologies Used</h2>
 
@@ -19,13 +19,36 @@ In the project, we focus on the practical application of DNS, a fundamental conc
 - Windows Server 2022 (Domain Controller)
 - Windows 10 Pro (21H2) (Client)
 
-<h2>DNS Configuration Steps</h2>
+<h2>Configuration Steps</h2>
 
-<p>
-<img src="https://i.imgur.com/5pjgtVz.png" height="80%" width="80%" alt="DNS Steps"/>
-<img src="https://i.imgur.com/Zl04Jyt.png" height="80%" width="80%" alt="DNS Steps"/>
-<img src="https://i.imgur.com/96xUgLF.png" height="80%" width="80%" alt="DNS Steps"/>
-</p>
+
+① While logged in to **Client_01** as an administrator (this example uses **mydomain.com\jane_admin**, open the **command prompt**.
+
+<img width="550" alt="1  Open Command Prompt" src="https://github.com/TerikaJ/DNS-Azure/assets/136477450/07b3f3ca-5cb0-4118-b2d5-867791680d7c">
+
+② Ping "mainframe"; it will fail.
+
+<img width="550" alt="2  Ping Mainframe" src="https://github.com/TerikaJ/DNS-Azure/assets/136477450/9a96272f-8e0d-41e4-a6d9-42c0fae38b5e">
+
+
+③ Use nslookup on "mainframe" to see that there is no DNS record for it.
+
+<img width="550" alt="3  nslookup Mainframe" src="https://github.com/TerikaJ/DNS-Azure/assets/136477450/d5d18e0a-9b80-4b65-a83b-78ca39360cd5">
+
+④ On the ***DC-01**, open the DNS Manager.
+
+
+⑤ Navigate to your domain within the Forward Lookup Zones tab (e.g., mydomain.com).
+
+⑥ Right-click on the page and select "New Host".
+
+⑦ For the name, input "mainframe" and set the IP address to match the domain controller's IP.
+
+⑧ Refresh the DNS server to update the new record.
+
+⑨ Return to the client and ping "mainframe" again; it should now resolve.
+
+
 <p>
 While logged in to the client as an admin, open the command prompt. When we ping "mainframe" it will fail. Nslookup "mainframe" provides similar results and shows that there is no DNS record for it. A DNS A-record will have to be created for mainframe on the domain controller. On the domain controller, open the DNS Manager and go to the domain you created within the Forward Lookup Zones tab. In my case, it is ernestotest.com. Right click on the page and create a New Host. For name, input mainframe and the IP address should be the same IP as the domain controller so that ping can resolve. Refresh the DNS server so that the new record can be updated. Upon returning to the client, ping mainframe once again to see that it will now resolve.
 </p>
