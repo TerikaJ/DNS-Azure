@@ -100,20 +100,6 @@ In the project, we focus on the practical application of DNS, a fundamental conc
 <img width="550" alt="17  nslookup search" src="https://github.com/TerikaJ/DNS-Azure/assets/136477450/25ac273d-7945-4c6c-a3a8-11e5d1ebeda8">
 
 
-<p>
-<img src="https://i.imgur.com/nLlOGKl.png" height="80%" width="80%" alt="DNS Steps"/>
-<img src="https://i.imgur.com/p0VcajB.png" height="80%" width="80%" alt="DNS Steps"/>
-<img src="https://i.imgur.com/ds0SCKW.png" height="80%" width="80%" alt="DNS Steps"/>
-<img src="https://i.imgur.com/d4cXTCS.png" height="80%" width="80%" alt="DNS Steps"/>
-</p>
-
-
-<p>
-<img src="https://i.imgur.com/rI2NYU7.png" height="80%" width="80%" alt="DNS Steps"/>
-<img src="https://i.imgur.com/FmVM0IU.png" height="80%" width="80%" alt="DNS Steps"/>
-<img src="https://i.imgur.com/dyWduSW.png" height="80%" width="80%" alt="DNS Steps"/>
-</p>
-
 <h2>Conclusion </h2>
 
 This project demonstrates the practical application of DNS configuration and management within a domain environment. By creating and updating DNS records, clearing DNS cache, and setting up CNAME records, we have explored how DNS works in real-world scenarios. These exercises underscore the importance of DNS in network communication and provide a hands-on understanding of how to manage DNS settings effectively. Through this project, I have gained valuable experience in configuring and troubleshooting DNS, reinforcing both theoretical knowledge and practical skills essential for IT professionals.
