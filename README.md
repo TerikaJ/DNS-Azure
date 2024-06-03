@@ -48,11 +48,29 @@ In the project, we focus on the practical application of DNS, a fundamental conc
 
 ⑨ Return to the client and ping "mainframe" again; it should now resolve.
 
+<h2>Management Steps</h2>
 
-<p>
-While logged in to the client as an admin, open the command prompt. When we ping "mainframe" it will fail. Nslookup "mainframe" provides similar results and shows that there is no DNS record for it. A DNS A-record will have to be created for mainframe on the domain controller. On the domain controller, open the DNS Manager and go to the domain you created within the Forward Lookup Zones tab. In my case, it is ernestotest.com. Right click on the page and create a New Host. For name, input mainframe and the IP address should be the same IP as the domain controller so that ping can resolve. Refresh the DNS server so that the new record can be updated. Upon returning to the client, ping mainframe once again to see that it will now resolve.
-</p>
-<br />
+① On the domain controller, change mainframe's record address to 8.8.8.8 (Google) and refresh the DNS server.
+
+② On the client, ping "mainframe"; it will still ping the old IP address.
+
+③ Run ipconfig /displaydns to reveal that the DNS cache still has the old IP.
+
+④ Run ipconfig /flushdns to empty the cache.
+
+⑤ Ping "mainframe" again; the IP address will be updated to the new one on the client side.
+
+⑥ Verify that the new IP address of the record shows when pinging "mainframe".
+
+⑦ Create a CNAME record on the DNS server to point "search" to Google.
+
+⑧ On the Forward Lookup Zones tab in the DNS Manager, open the tab with the domain.
+
+⑨ Create a new CNAME record called "search" and point it to Google.
+
+⑩ Refresh the server to save the changes.
+
+⑪ On the client, ping "search" and use nslookup to return the results of the CNAME record.
 
 <p>
 <img src="https://i.imgur.com/nLlOGKl.png" height="80%" width="80%" alt="DNS Steps"/>
@@ -77,7 +95,7 @@ A CNAME record will now be made on the DNS server that will point "search" to Go
 
 <h2>Conclusion </h2>
 
-This lab made me understand how DNS directly works on a computer and the network. DNS records can change and sometimes this can cause connectivity issues. The DNS cache may have the old records and needs to be cleared out to update to the new records. The ipconfig /flushdns command is a common troubleshooting tool that has been referenced a lot in IT programs and I did not get a complete understanding how and why this works until I have done this lab. In the context of pinging "mainframe" at the start of the lab, the DNS cache gets checked first. If there is no result, the host file will be checked. The DNS server will be checked if there are no results in the host file. I made a record on the DNS server so a ping to mainframe can resolve. A CNAME record maps an alias name to another domain name. In this case, "search" was another name for Google.
+This project demonstrates the practical application of DNS configuration and management within a domain environment. By creating and updating DNS records, clearing DNS cache, and setting up CNAME records, we have explored how DNS works in real-world scenarios. These exercises underscore the importance of DNS in network communication and provide a hands-on understanding of how to manage DNS settings effectively. Through this project, I have gained valuable experience in configuring and troubleshooting DNS, reinforcing both theoretical knowledge and practical skills essential for IT professionals.
 
 <h1><p align=center> DONE! Good job! </p></h1>
 
