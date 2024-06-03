@@ -30,7 +30,6 @@ In the project, we focus on the practical application of DNS, a fundamental conc
 
 <img width="550" alt="2  Ping Mainframe" src="https://github.com/TerikaJ/DNS-Azure/assets/136477450/9a96272f-8e0d-41e4-a6d9-42c0fae38b5e">
 
-
 ③ Use nslookup on "mainframe" to see that there is no DNS record for it.
 
 <img width="550" alt="3  nslookup Mainframe" src="https://github.com/TerikaJ/DNS-Azure/assets/136477450/d5d18e0a-9b80-4b65-a83b-78ca39360cd5">
@@ -60,7 +59,6 @@ In the project, we focus on the practical application of DNS, a fundamental conc
 <img width="550" alt="8  Ping mainframe DNS resolves" src="https://github.com/TerikaJ/DNS-Azure/assets/136477450/a3cfea40-2319-48ca-9101-7876767cd7fc">
 
 
-
 <h2>Management Steps</h2>
 
 ① On the domain controller, change mainframe's record address to 8.8.8.8 (Google) and refresh the DNS server.
@@ -84,6 +82,8 @@ In the project, we focus on the practical application of DNS, a fundamental conc
 <img width="550" alt="12  ipconfig :flushdns Run as Admin" src="https://github.com/TerikaJ/DNS-Azure/assets/136477450/b5e398ad-8dba-4dbd-b9c1-a2f4ceed5776">
 
 ⑤ Ping "mainframe" again; the IP address will be updated to the new one on the client side.
+
+<img width="541" alt="13  ping mainframe now Google IP ADD" src="https://github.com/TerikaJ/DNS-Azure/assets/136477450/9b29e5b1-c736-49fa-8a25-ae58e1f6c6ec">
 
 ⑥ Verify that the new IP address of the record shows when pinging "mainframe".
 
