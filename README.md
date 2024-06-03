@@ -1,4 +1,4 @@
-<h1>Domain Name System (DNS) 💻<h2> 
+<h1>Domain Name System (DNS) Configuration and Management 🌐 <h2> 
 
 ![how-dns-works](https://github.com/TerikaJ/DNS-Azure/assets/136477450/7cc199b1-53ae-42af-a3d1-2f1a4c122d82)
 
