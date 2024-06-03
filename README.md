@@ -75,11 +75,13 @@ In the project, we focus on the practical application of DNS, a fundamental conc
 
 ③ Run ipconfig /displaydns to reveal that the DNS cache still has the old IP.
 
-
+<img width="550" alt="11  ipconfig :displaydns" src="https://github.com/TerikaJ/DNS-Azure/assets/136477450/8e5f8a83-2424-48df-b36c-f951336702b2">
 
 ④ Run ipconfig /flushdns to empty the cache. 
 
-***IMPORTANT: Ensure that you are running the Command Prompt as an Administrator*** or this will not work.
+***IMPORTANT: Ensure that you are running the Command Prompt as an Administrator or this will not work.***
+
+<img width="550" alt="12  ipconfig :flushdns Run as Admin" src="https://github.com/TerikaJ/DNS-Azure/assets/136477450/b5e398ad-8dba-4dbd-b9c1-a2f4ceed5776">
 
 ⑤ Ping "mainframe" again; the IP address will be updated to the new one on the client side.
 
