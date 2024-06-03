@@ -26,11 +26,11 @@ In the project, we focus on the practical application of DNS, a fundamental conc
 
 <img width="550" alt="1  Open Command Prompt" src="https://github.com/TerikaJ/DNS-Azure/assets/136477450/07b3f3ca-5cb0-4118-b2d5-867791680d7c">
 
-② Ping "mainframe"; it will fail.
+② **Ping** "mainframe"; it will fail.
 
 <img width="550" alt="2  Ping Mainframe" src="https://github.com/TerikaJ/DNS-Azure/assets/136477450/9a96272f-8e0d-41e4-a6d9-42c0fae38b5e">
 
-③ Use nslookup on "mainframe" to see that there is no DNS record for it.
+③ Use **nslookup** on "mainframe" to see that there is no DNS record for it.
 
 <img width="550" alt="3  nslookup Mainframe" src="https://github.com/TerikaJ/DNS-Azure/assets/136477450/d5d18e0a-9b80-4b65-a83b-78ca39360cd5">
 
@@ -54,7 +54,7 @@ In the project, we focus on the practical application of DNS, a fundamental conc
 
 <img width="550" alt="7a  Refresh" src="https://github.com/TerikaJ/DNS-Azure/assets/136477450/0360b4ea-c67d-41f1-aa25-90594ef8fa1d">
 
-⑨ Return to the client and ping "mainframe" again; it should now resolve.
+⑨ Return to the client and **ping** "mainframe" again; it should now resolve.
 
 <img width="550" alt="8  Ping mainframe DNS resolves" src="https://github.com/TerikaJ/DNS-Azure/assets/136477450/a3cfea40-2319-48ca-9101-7876767cd7fc">
 
@@ -67,21 +67,21 @@ In the project, we focus on the practical application of DNS, a fundamental conc
 
 <img width="550" alt="7a  Refresh" src="https://github.com/TerikaJ/DNS-Azure/assets/136477450/0360b4ea-c67d-41f1-aa25-90594ef8fa1d">
 
-② On the client, ping "mainframe"; it will still ping the old IP address.
+② On the client, **ping** "mainframe"; it will still ping the old IP address.
 
 <img width="525" alt="10  ping mainframe 8 8 8" src="https://github.com/TerikaJ/DNS-Azure/assets/136477450/9c7e4e59-a9de-4fab-9b77-7823db6c04bd">
 
-③ Run ipconfig /displaydns to reveal that the DNS cache still has the old IP.
+③ Run **ipconfig /displaydn** to reveal that the DNS cache still has the old IP.
 
 <img width="550" alt="11  ipconfig :displaydns" src="https://github.com/TerikaJ/DNS-Azure/assets/136477450/8e5f8a83-2424-48df-b36c-f951336702b2">
 
-④ Run ipconfig /flushdns to empty the cache. 
+④ Run **ipconfig /flushdns** to empty the cache. 
 
 ***IMPORTANT: Ensure that you are running the Command Prompt as an Administrator or this will not work.***
 
 <img width="550" alt="12  ipconfig :flushdns Run as Admin" src="https://github.com/TerikaJ/DNS-Azure/assets/136477450/b5e398ad-8dba-4dbd-b9c1-a2f4ceed5776">
 
-⑤ Ping "mainframe" again; the IP address will be updated to the new one on the client side.
+⑤ **Ping** "mainframe" again; the IP address will be updated to the new one on the client side.
 
 ⑥ Verify that the new IP address of the record shows when pinging "mainframe".
 <img width="541" alt="13  ping mainframe now Google IP ADD" src="https://github.com/TerikaJ/DNS-Azure/assets/136477450/9b29e5b1-c736-49fa-8a25-ae58e1f6c6ec">
