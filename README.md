@@ -83,19 +83,22 @@ In the project, we focus on the practical application of DNS, a fundamental conc
 
 ⑤ Ping "mainframe" again; the IP address will be updated to the new one on the client side.
 
+⑥ Verify that the new IP address of the record shows when pinging "mainframe".
 <img width="541" alt="13  ping mainframe now Google IP ADD" src="https://github.com/TerikaJ/DNS-Azure/assets/136477450/9b29e5b1-c736-49fa-8a25-ae58e1f6c6ec">
 
-⑥ Verify that the new IP address of the record shows when pinging "mainframe".
+⑦ Create a CNAME record on the DNS server called "search" and point "search" to Google.
+<img width="550" alt="15  CNAME record" src="https://github.com/TerikaJ/DNS-Azure/assets/136477450/b20f3505-3cb8-47f8-a947-dfba3a1af27d">
 
-⑦ Create a CNAME record on the DNS server to point "search" to Google.
+⑧ Refresh the server to save the changes.
 
-⑧ On the Forward Lookup Zones tab in the DNS Manager, open the tab with the domain.
+<img width="550" alt="7a  Refresh" src="https://github.com/TerikaJ/DNS-Azure/assets/136477450/0360b4ea-c67d-41f1-aa25-90594ef8fa1d">
 
-⑨ Create a new CNAME record called "search" and point it to Google.
+⑨ On the client, **ping** "search" and use **nslookup** to return the results of the CNAME record.
 
-⑩ Refresh the server to save the changes.
+<img width="550" alt="16  Ping search" src="https://github.com/TerikaJ/DNS-Azure/assets/136477450/66ee0879-6d01-44e1-b7f6-21401105e0cb">
 
-⑪ On the client, ping "search" and use nslookup to return the results of the CNAME record.
+<img width="550" alt="17  nslookup search" src="https://github.com/TerikaJ/DNS-Azure/assets/136477450/25ac273d-7945-4c6c-a3a8-11e5d1ebeda8">
+
 
 <p>
 <img src="https://i.imgur.com/nLlOGKl.png" height="80%" width="80%" alt="DNS Steps"/>
