@@ -16,8 +16,8 @@ In the project, we focus on the practical application of DNS, a fundamental conc
 
 <h2>Operating Systems Used </h2>
 
-- Windows Server 2022 (Domain Controller)
-- Windows 10 Pro (21H2) (Client)
+- Windows Server 2022 (Domain Controller - **DC-01**)
+- Windows 10 Pro (21H2) (Client - **Client-01**)
 
 <h2>Configuration Steps</h2>
 
