@@ -56,7 +56,7 @@ This lab made me understand how DNS directly works on a computer and the network
 
 <h1><p align=center> DONE! Good job! </p></h1>
 
-<h2><p align=center>The Next Demonstration:<br><a href="https://github.com/terikaj/azure-network-protocols"> Wireshark Network Traffic Inspection </a></p></h2>
+<h2><p align=center>The Next Demonstration:<br><a href="https://github.com/terikaj/FilePermissions-Azure"> Configuring and Managing File Permissions </a></p></h2>
 
 <p align=right>Please delete & clean up your Azure resources when finished!<br>
 If you're unsure of how to do this, please click <a href="https://github.com/terikaj/azure-begin">HERE</a>
