@@ -1,9 +1,11 @@
-<p align="center">
-<img src="https://i.imgur.com/MwrkwEQ.png" alt="DNS Photo"/>
-</p>
+<h1>Domain Name System (DNS) 💻<h2> 
 
-<h1>Understanding DNS</h1>
-This lab focuses on DNS and how it is used. DNS is a fundamental concept in IT and many sources go over the theory behind it. I will be configuring DNS records and seeing how it works in practice. This is building up from a previous lab where I have a client joined to my domain ernestotest.com. I am logged in as Jane Doe (an admin account) on both the client and domain controller VMs. In order for the lab to work, you need to be logged in as an administrator. <br />
+![how-dns-works](https://github.com/TerikaJ/DNS-Azure/assets/136477450/7cc199b1-53ae-42af-a3d1-2f1a4c122d82)
+
+
+<h2>Introduction</h2>
+
+In the project, we focus on the practical application of DNS, a fundamental concept in IT. Building on a previous lab where a client VM was joined to the domain VM **'mydomain.com'**, we will configure DNS records and explore their functionality. Logged in as the administrator account **mydomain\jane_doe** on both the **Client-01** and **DC-01** VMs, we will demonstrate how DNS operates in a real-world scenario. This hands-on approach emphasizes the importance of administrative access for effective DNS management. 
 
 <h2>Environments and Technologies Used</h2>
 
@@ -14,8 +16,8 @@ This lab focuses on DNS and how it is used. DNS is a fundamental concept in IT a
 
 <h2>Operating Systems Used </h2>
 
-- Windows Server 2022
-- Windows 10 Pro (21H2)
+- Windows Server 2022 (Domain Controller)
+- Windows 10 Pro (21H2) (Client)
 
 <h2>DNS Configuration Steps</h2>
 
