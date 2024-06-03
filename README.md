@@ -50,6 +50,14 @@ A CNAME record will now be made on the DNS server that will point "search" to Go
 </p>
 <br />
 
-<h2>Lessons Learned </h2>
+<h2>Conclusion </h2>
 
 This lab made me understand how DNS directly works on a computer and the network. DNS records can change and sometimes this can cause connectivity issues. The DNS cache may have the old records and needs to be cleared out to update to the new records. The ipconfig /flushdns command is a common troubleshooting tool that has been referenced a lot in IT programs and I did not get a complete understanding how and why this works until I have done this lab. In the context of pinging "mainframe" at the start of the lab, the DNS cache gets checked first. If there is no result, the host file will be checked. The DNS server will be checked if there are no results in the host file. I made a record on the DNS server so a ping to mainframe can resolve. A CNAME record maps an alias name to another domain name. In this case, "search" was another name for Google.
+
+<h1><p align=center> DONE! Good job! </p></h1>
+
+<h2><p align=center>The Next Demonstration:<br><a href="https://github.com/terikaj/azure-network-protocols"> Wireshark Network Traffic Inspection </a></p></h2>
+
+<p align=right>Please delete & clean up your Azure resources when finished!<br>
+If you're unsure of how to do this, please click <a href="https://github.com/terikaj/azure-begin">HERE</a>
+</p>
